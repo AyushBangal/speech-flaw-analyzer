@@ -1,0 +1,16 @@
+{
+  "baseline_audio": "data\\real\\test.wav",
+  "flawed_audio": "data\\flawed\\test_volume.wav",
+  "injected_flaws": [
+    {
+      "flaw_type": "volume_drop",
+      "baseline_start_sec": 3.0,
+      "baseline_end_sec": 8.0,
+      "modified_start_sec": 3.0,
+      "modified_end_sec": 8.0,
+      "params": {
+        "gain": 0.3
+      }
+    }
+  ]
+}

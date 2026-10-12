@@ -1,0 +1,16 @@
+{
+  "baseline_audio": "data\\real\\test.wav",
+  "flawed_audio": "data\\flawed\\test_pause.wav",
+  "injected_flaws": [
+    {
+      "flaw_type": "long_pause",
+      "baseline_start_sec": 5.54,
+      "baseline_end_sec": 5.54,
+      "modified_start_sec": 5.54,
+      "modified_end_sec": 8.04,
+      "params": {
+        "pause_sec": 2.5
+      }
+    }
+  ]
+}
