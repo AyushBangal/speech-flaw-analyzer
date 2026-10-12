@@ -14,6 +14,7 @@ def extract(wav, words_json, out):
     med = np.median(f0[voiced])
     st = np.where(voiced, 12 * np.log2(np.where(voiced, f0, 1) / med), np.nan)
     mu, sd = rms_db.mean(), rms_db.std() + 1e-6
+    ref_db = np.percentile(rms_db, 90)
     rows, prev_end = [], 0.0
     for w in words:
         m = (rt >= w["start"]) & (rt < w["end"])
@@ -23,6 +24,7 @@ def extract(wav, words_json, out):
             "dur": round(w["end"] - w["start"], 3),
             "gap_before": round(max(0, w["start"] - prev_end), 3),
             "energy_z": float((rms_db[m].mean() - mu) / sd) if m.any() else 0.0,
+            "energy_rel_db": float(rms_db[m].mean() - ref_db) if m.any() else 0.0,
             "f0_st_med": float(np.median(pv)) if len(pv) else None,
             "f0_st_range": float(pv.max() - pv.min()) if len(pv) else None})
         prev_end = w["end"]
