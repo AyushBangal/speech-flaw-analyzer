@@ -1,0 +1,16 @@
+{
+  "baseline_audio": "data\\real\\test.wav",
+  "flawed_audio": "data\\flawed\\test_rushed.wav",
+  "injected_flaws": [
+    {
+      "flaw_type": "rushed_pace",
+      "baseline_start_sec": 3.0,
+      "baseline_end_sec": 8.0,
+      "modified_start_sec": 3.0,
+      "modified_end_sec": 6.333,
+      "params": {
+        "speed_factor": 1.5
+      }
+    }
+  ]
+}
