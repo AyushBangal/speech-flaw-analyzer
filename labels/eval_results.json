@@ -1,0 +1,35 @@
+{
+  "rows": [
+    {
+      "case": "rushed",
+      "flaw_type": "rushed_pace",
+      "injected": [
+        3.0,
+        6.333
+      ],
+      "iou": 0.924,
+      "detected": true
+    },
+    {
+      "case": "pause",
+      "flaw_type": "long_pause",
+      "injected": [
+        5.54,
+        8.04
+      ],
+      "iou": 0.88,
+      "detected": true
+    },
+    {
+      "case": "volume",
+      "flaw_type": "volume_drop",
+      "injected": [
+        3.0,
+        8.0
+      ],
+      "iou": 0.912,
+      "detected": true
+    }
+  ],
+  "false_alarms": []
+}
