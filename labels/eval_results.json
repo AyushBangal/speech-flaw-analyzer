@@ -27,9 +27,16 @@
         3.0,
         8.0
       ],
-      "iou": 0.912,
+      "iou": 0.943,
       "detected": true
     }
   ],
-  "false_alarms": []
+  "false_alarms": [
+    {
+      "case": "pause",
+      "type": "volume_drop",
+      "start": 3.6,
+      "end": 10.46
+    }
+  ]
 }
