@@ -5,6 +5,7 @@
 **Technical documentation:** [docs/technical_doc.pdf](docs/technical_doc.pdf)
 
 **Team:** Caps Lock Crew
+
 ## What this does
 
 Speech Flaw Analyzer compares a speech reading against a reference reading, finds the exact seconds where delivery goes wrong (rushed pace, long pause, volume drop), and explains each flag with measured numbers. It is a rule-based pipeline, so every flag can be traced to a feature difference.
