@@ -1,6 +1,6 @@
 # speech-flaw-analyzer
 
-**Demo video:** https://youtu.be/HCXbMniLnYU
+**Demo video:** https://youtu.be/VCrIuL9yBtE
 
 **Technical documentation:** [docs/technical_doc.pdf](docs/technical_doc.pdf)
 
