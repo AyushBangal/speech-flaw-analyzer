@@ -1,7 +1,10 @@
 # speech-flaw-analyzer
 
-**Demo video:** [https://youtu.be/HCXbMniLnYU]
+**Demo video:** https://youtu.be/HCXbMniLnYU
 
+**Technical documentation:** [docs/technical_doc.pdf](docs/technical_doc.pdf)
+
+**Team:** Caps Lock Crew
 ## What this does
 
 Speech Flaw Analyzer compares a speech reading against a reference reading, finds the exact seconds where delivery goes wrong (rushed pace, long pause, volume drop), and explains each flag with measured numbers. It is a rule-based pipeline, so every flag can be traced to a feature difference.
@@ -72,3 +75,5 @@ Detector sanity check on injected flaws (from `labels/eval_results.json`):
 - The injected-flaw test is the easiest case: baseline and flawed files come from the same recording.
 - Word timing comes from speech recognition, so it is approximate (about 0.2 s in our spot-check).
 - Free speech mode is experimental and not validated. The reference-comparison mode is the main result.
+
+- **Label files:** `*_words.json` hold word timestamps, `*_features.json` hold per-word measurements (duration, gap, loudness, pitch), `*_words_asr.json` hold the raw recognizer output for the Gettysburg readings, and `eval_results.json` / `ab_results.txt` hold the evaluation results.
